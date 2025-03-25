@@ -1,18 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ContentSvg from "../assets/images/svg/content-svg.svg";
-import ContentImg from "../assets/images/content-img.png";
-import YoutubeVideoImg from "../assets/images/youtube-video-img.png";
-import YoutubeSvg from "../assets/images/svg/youtube-svg.svg";
-import VimeoVideoImg from "../assets/images/vimeo-video-img.png";
-import VimeoSvg from "../assets/images/svg/vimeo-svg.svg";
-import SoundCloudImg from "../assets/images/sound-cloud-img.png";
-import SoundCloudSvg from "../assets/images/svg/sound-cloud.svg";
-import GalleryImg from "../assets/images/gallery-img.png";
-import GallerySvg from "../assets/images/svg/gallery-svg.svg";
-import ContentImg2 from "../assets/images/content-img2.png";
-import YouTubeModal from "./YouTubeVideo";
-import VimeoModal from "./VimeoModal";
-import SoundCloudModal from "./SoundCloudVideo";
+
 import $ from "jquery";
 import Galleryimg1 from "../assets/images/gallery/gallery-img1.jpg";
 import Galleryimg2 from "../assets/images/gallery/gallery-img2.jpg";
@@ -104,133 +91,100 @@ const Portfolio = () => {
           <div className="line"></div>
         </div>
         <div className="portfolios-group-main">
+          {/* Column 1 */}
+          <div>
+            <a
+              href="https://adminkit-demo.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                className="image-container popup-btn zoom_in"
+              >
+                <img src="./images/Adminkit.png" alt="Adminkit-demo" />
+                <div className="overlay">
+                  <p className="overlay-text">Adminkit-Demo</p>
+                </div>
+              </div>
+            </a>
+            <p className="Corporate zoom_in">Adminkit-Demo</p>
+            <p className="Corporate-sub zoom_in">
+              React.js, Tailwind CSS and JS
+            </p>
+
+            {/* Second row */}
+            <div className="second-row-portfolio youtube zoom_in">
+              <div className="image-container" onClick={handleOpenModalYoutube}>
+                <img src="./images/Pheli.png" alt="Booking Clone" />
+                <div className="overlay">
+                  <p className="overlay-text">Paheli cyber security</p>
+                </div>
+              </div>
+              <p className="Corporate">Paheli cyber security</p>
+              <p className="Corporate-sub">React.js & Tailwind css</p>
+            </div>
+          </div>
+
+          {/* Column 2 */}
           <div>
             <div
-              className="image-container popup-btn zoom_in"
-              onClick={handlePopupOpen}
+              className="image-container zoom_in"
+              id="vimeo"
+              onClick={handleOpenModal}
             >
-              <img src={ContentImg} alt="content-img" />
+              <img src="./images/Netflix.png" alt="Paheli Cyber Security" />
               <div className="overlay">
-                <img src={ContentSvg} alt="vimeo-svg" className="vimeo-icon" />
-                <p className="overlay-text">Corporate Branding</p>
+                <p className="overlay-text">Netflix clone</p>
               </div>
             </div>
-            <p className="Corporate zoom_in">Corporate Branding</p>
-            <p className="Corporate-sub zoom_in">CONTENT</p>
-            <div className="second-row-portfolio youtube zoom_in">
-              <div>
-                <div
-                  className="image-container"
-                  onClick={handleOpenModalYoutube}
-                >
-                  <img src={YoutubeVideoImg} alt="youtube-video-img" />
-                  <div className="overlay">
-                    <img
-                      src={YoutubeSvg}
-                      alt="youtube-svg"
-                      className="vimeo-icon"
-                    />
-                    <p className="overlay-text">Food App Development</p>
-                  </div>
-                </div>
-                <YouTubeModal
-                  isOpen={isModalOpenYoutube}
-                  onRequestClose={handleCloseModalYoutube}
-                />
-              </div>
-              <p className="Corporate">Food App Development</p>
-              <p className="Corporate-sub">youtube video</p>
-            </div>
+            <p className="Corporate zoom_in">Netflix clone</p>
+            <p className="Corporate-sub zoom_in">Tailwind CSS</p>
           </div>
-          <div>
-            <div>
-              <div
-                className="image-container zoom_in"
-                id="vimeo"
-                onClick={handleOpenModal}
-              >
-                <img src={VimeoVideoImg} alt="vimeo-video-img" />
-                <div className="overlay">
-                  <img src={VimeoSvg} alt="vimeo-svg" className="vimeo-icon" />
-                  <p className="overlay-text">Crypto App UI Design</p>
-                </div>
-              </div>
-              <VimeoModal
-                isOpen={isModalOpen}
-                onRequestClose={handleCloseModal}
-              />
-            </div>
-            <p className="Corporate zoom_in">Crypto App UI Design</p>
-            <p className="Corporate-sub zoom_in">vimeo video</p>
-            <div>
-              <div
-                className="second-row-portfolio soundcloud zoom_in"
-                onClick={handleOpenModalSound}
-              >
-                <div className="image-container">
-                  <img src={SoundCloudImg} alt="sound-cloud-img" />
-                  <div className="overlay">
-                    <img
-                      src={SoundCloudSvg}
-                      alt="sound-cloud"
-                      className="vimeo-icon"
-                    />
-                    <p className="overlay-text">Pocket FM Radio</p>
-                  </div>
-                </div>
-                <p className="Corporate">Pocket FM Radio</p>
-                <p className="Corporate-sub">sound cloud</p>
-              </div>
-              <SoundCloudModal
-                isOpen={isModalOpenSound}
-                onRequestClose={handleCloseModalSound}
-              />
-            </div>
-          </div>
+
+          {/* Column 3 */}
           <div className="gallery-bank-section">
             <div className="zoom_in">
               <div className="image-container">
                 <a href="#popup2">
-                  <img src={GalleryImg} alt="gallery-img" />
+                  <img src="./images/Edumim.png" alt="Edumim Clone" />
                   <div className="overlay">
-                    <img
-                      src={GallerySvg}
-                      alt="gallery-svg"
-                      className="vimeo-icon"
-                    />
-                    <p className="overlay-text">City 3D View</p>
+                    <p className="overlay-text">Edumim Clone</p>
                   </div>
                 </a>
               </div>
-              <p className="Corporate">City 3D View</p>
-              <p className="Corporate-sub">gallery</p>
+              <p className="Corporate">Edumim Clone</p>
+              <p className="Corporate-sub">React & Tailwind CSS</p>
             </div>
+
+            {/* Second row */}
             <div
               className="second-row-portfolio popup-btn zoom_in"
-              onClick={handlePopupOpen}
             >
               <div className="image-container">
-                <img src={ContentImg2} alt="content-img2" />
+                <img src="./images/luminos.png" alt="Behance Clone" />
                 <div className="overlay">
-                  <img
-                    src={ContentSvg}
-                    alt="content-svg"
-                    className="vimeo-icon"
-                  />
-                  <p className="overlay-text">Bank App Development</p>
+                  <p className="overlay-text">Luminos Clone</p>
                 </div>
               </div>
-              <p className="Corporate">Bank App Development</p>
-              <p className="Corporate-sub">content</p>
+              <p className="Corporate">Luminos Clone</p>
+              <p className="Corporate-sub">Tailwind CSS</p>
             </div>
           </div>
         </div>
+
+        {/* View All Projects Button */}
         <div className="wrapper view-all-btn zoom_in">
-          <Link className="btn-hover" to="#">
+          <a
+            className="btn-hover"
+            href="https://vercel.com/zartasha-kanwals-projects"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View All
-          </Link>
+          </a>
         </div>
       </section>
+
       <Popup isVisible={isPopupVisible} onClose={handlePopupClose} />
       {/* <!-- ====================================== Section Portfolio End ===================================== --> */}
       <div id="popup2" class="popup-container popup-style">
