@@ -62,7 +62,7 @@ const AboutSection = () => {
 
         <div className="about-detail-main">
           <p className="about-detail">Experience</p>
-          <p className="about-detail-info">6+ years</p>
+          <p className="about-detail-info">2 years</p>
         </div>
         <div className="about-detail-main">
           <p className="about-detail">Freelance</p>

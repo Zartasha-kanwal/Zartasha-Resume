@@ -1,7 +1,6 @@
 /*------------------------------------------------------------------
   Project: Resume
-  Author: The_Krishna
-  Last change: 01/06/2024
+  Author: Zartasha kanwal
   Primary use:
 ------------------------------------------------------------------ */
 /*-----------------------[Table of contents]------------------------
@@ -338,7 +337,6 @@ h1 span {
 .active-menu-action a.active {
     filter: brightness(0) saturate(100%) invert(55%) sepia(64%) saturate(887%) hue-rotate(120deg) brightness(94%) contrast(101%) !important;
 }
-
 /*-----------------------[ 4.CV Dowload Button CSS ]------------------------*/
 #wrap {
     margin: 20px 20px;
@@ -826,45 +824,7 @@ h1 span {
     padding-left: 20px;
 }
 
-/*-----------------------[ 9.coding-skill-section CSS ]------------------------*/
-.coding-skill-section {
-    padding: 80px 0;
-}
-
-#progress {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin-top: 30px;
-}
-
-.progress-item {
-    display: flex;
-    width: 146px;
-    height: 146px;
-    border-radius: 50%;
-    font-size: 0;
-    animation: .4s ease-out reverse;
-}
-
-.progress-item::after {
-    content: attr(data-value);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 130px;
-    margin: 8px;
-    border-radius: 50%;
-    background: #0F141C;
-    color: var(--1, #FFF);
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    text-transform: uppercase;
-}
-
-/*-----------------------[ 10.design-skill-section CSS ]------------------------*/
+/*-----------------------[ 9.Skill-section CSS ]------------------------*/
 .design-skill-sub-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -940,139 +900,7 @@ h1 span {
 .skill-counter-main p {
     margin-bottom: 0px !important;
 }
-
-/*-----------------------[ 11.Award-section CSS ]------------------------*/
-.box-item {
-    position: relative;
-}
-
-.awards-row {
-    gap: 24px 0;
-    padding-top: 46px;
-}
-
-.flip-box {
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    perspective: 1000px;
-    -webkit-perspective: 1000px;
-}
-
-.flip-box-front {
-    -ms-transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.flip-box-front,
-.flip-box-back {
-    background-size: cover;
-    background-position: center;
-    min-height: 180px;
-    -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
-    transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
-    -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background: #171B22;
-    border-radius: 20px;
-}
-
-.flip-box .inner {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    -webkit-perspective: inherit;
-    perspective: inherit;
-    z-index: 2;
-    padding: 20px;
-    transform: translateY(-50%) translateZ(60px) scale(.94);
-    -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
-    -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
-    top: 50%;
-}
-
-.award-yer {
-    color: var(--14, #909090);
-    text-align: right;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.winner-award {
-    max-width: 100%;
-    padding: 0 0 20px;
-}
-
-.years-award-img {
-    display: flex;
-    justify-content: space-between;
-}
-
-.inner p {
-    margin-bottom: 0px !important;
-}
-
-.award-interior {
-    color: var(--1, #FFF);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 32px;
-}
-
-.award-winner-text {
-    color: var(--11, #FF7D61);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 18px;
-    text-transform: uppercase;
-    padding-top: 10px;
-}
-
-.flip-box-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -ms-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.flip-back-text {
-    font-size: 18px;
-    color: #FFF;
-    line-height: 28px;
-    text-align: center;
-}
-
-.flip-box:hover .flip-box-front {
-    -ms-transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-back {
-    -ms-transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-/*-----------------------[ 12.Services-section CSS ]------------------------*/
+/*-----------------------[ 10.Services-section CSS ]------------------------*/
 .Services-section {
     padding: 80px 0;
 }
@@ -1253,210 +1081,6 @@ h1 span {
     margin-top: 30px;
 }
 
-/*-----------------------[ 14.Porfoilo-section containe pop up CSS ]------------------------*/
-.popup-wrap {
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: "";
-    background: linear-gradient(131deg, rgba(9, 16, 26, 0.28) 0%, rgba(9, 16, 26, 0.28) 100%);
-    backdrop-filter: blur(4px);
-    z-index: 600;
-}
-
-.popup-box {
-    width: 850px;
-    height: 100vh;
-    overflow: auto;
-    padding: 50px;
-    transform: translate(-50%, -50%) scale(0.5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 20px;
-    background: #171B22;
-    text-align: center;
-}
-
-.popup-box .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.transform-in,
-.transform-out {
-    display: block;
-    -webkit-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-}
-
-.transform-in {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.transform-out {
-    -webkit-transform: translate(-50%, -50%) scale(0.5);
-    transform: translate(-50%, -50%) scale(0.5);
-}
-
-.pop-up-img1 {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-.created_by,
-.cuberto {
-    color: #909090;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-    margin: 0;
-    padding: 10px 0;
-}
-
-.cuberto {
-    color: #FFF !important;
-}
-
-.corpo {
-    font-size: 25px;
-    line-height: 35px;
-    font-weight: 500;
-    color: #FFF;
-    padding-top: 30px;
-}
-
-.corpo-sub {
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #FFF;
-    padding: 10px 0 30px;
-}
-
-.cuberto_main {
-    display: flex;
-    justify-content: space-between;
-}
-
-.Ornare {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #909090;
-    padding-top: 30px;
-}
-
-.pop-up-img-section2 img {
-    max-width: 100%;
-    border-radius: 20px;
-    margin: 30px 0;
-}
-
-/*-----------------------[ 15.Gallery CSS ]------------------------*/
-.main .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.main .card {
-    color: #252a32;
-    border-radius: 2px;
-    background: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-}
-
-.main .card-image {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding-top: 70%;
-    background: #ffffff;
-}
-
-.main .card-image img {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.mobile_app {
-    color: var(--1, #FFF);
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 48px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.popup-container {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.3);
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(131deg, rgba(9, 16, 26, 0.28) 0%, rgba(9, 16, 26, 0.28) 100%);
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-}
-
-.popup-content {
-    background-color: #171B22;
-    margin: auto;
-    padding: 50px;
-    width: 800px;
-    height: 100vh;
-    overflow: auto;
-}
-
-.popup-content a.close {
-    color: #FFF;
-    float: right;
-    font-size: 35px;
-    font-weight: bold;
-    background: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
-
-.popup-container:target {
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
-}
-
-.popup-container h3 {
-    margin: 10px;
-}
-
-.popup-style {
-    transform: scale(0.3);
-}
-
-.popup-style:target {
-    transform: scale(1);
-}
-
 /*-----------------------[ 16.Pricing Section CSS ]------------------------*/
 .Pricing-section {
     padding: 80px 0;
@@ -1554,7 +1178,7 @@ h1 span {
 }
 
 .choose-plain-btn-main {
-    padding: 50px 60px;
+    padding: 50px 70px;
     border-left: 2px solid #63636385;
 }
 
@@ -1658,6 +1282,7 @@ li.slick-active {
 
 /*-----------------------[ 18.Section Blog CSS ]------------------------*/
 .blog-section {
+    display: none;
     padding: 80px 0px;
 }
 

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import ProfileImg from "../assets/images/profile-img.png";
 import EmailSvg from "../assets/images/svg/email-svg.svg";
 import Linkedin from "../assets/images/svg/Linkedin-svg.svg";
 import Freelancer from "../assets/images/svg/Freelancer-svg.svg";
@@ -10,7 +9,6 @@ import ResumeSvg from "../assets/images/svg/resume-svg.svg";
 import ServicesSvg from "../assets/images/svg/services-svg.svg";
 import PortfolioSvg from "../assets/images/svg/portfolio-svg.svg";
 import PricingSvg from "../assets/images/svg/pricing-svg.svg";
-import BlogSvg from "../assets/images/svg/blog-svg.svg";
 import ContactSvg from "../assets/images/svg/contact-svg.svg";
 import clientImg1 from "../assets/images/clients-img1.jpg";
 import clientImg2 from "../assets/images/clients-img2.jpg";
@@ -20,20 +18,19 @@ import zartasha from "../assets/images/zartasha-main-img.webp";
 import sidebarprofileimage from "../assets/images/sidebar-image.png";
 import CircularImg from "../assets/images/circular-img.png";
 import FlowerImg from "../assets/images/flower.png";
-import BrandLogo1 from "../assets/images/brand-logo1.png";
-import BrandLogo2 from "../assets/images/brand-logo2.png";
-import BrandLogo3 from "../assets/images/brand-logo3.png";
-import BrandLogo4 from "../assets/images/brand-logo4.png";
-import BrandLogo5 from "../assets/images/brand-logo5.png";
-import BrandLogo6 from "../assets/images/brand-logo6.png";
-import BrandLogo7 from "../assets/images/brand-logo7.png";
-import BrandLogo8 from "../assets/images/brand-logo8.png";
+import Netflix from "../assets/images/Netflix-1.png";
+import Paheli from "../assets/images/Paheli-1.png";
+import Adminkit from "../assets/images/Adminkit-1.png";
+import Luminos from "../assets/images/Luminos.png";
+import Edumim from "../assets/images/Edumim.png";
+import Propertyfinder from "../assets/images/Propertyfinder.png";
+import Booking from "../assets/images/Booking.png";
+import Amazon from "../assets/images/amazon.png";
 import AboutSection from "./About";
 import Resume from "./Resume";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Pricing from "./Pricing";
-import Blog from "./Blog";
 import Contact from "./Contact";
 import $ from "jquery";
 import CV from "../assets/pdf/olivia_resume.pdf";
@@ -274,20 +271,6 @@ const Home = () => {
             </li>
             <li
               className={`active-menu-action ${
-                activeLink === "blog" ? "active" : ""
-              }`}
-            >
-              <a
-                className="fade_right"
-                href="#blog"
-                onClick={(e) => handleClick(e, "blog")}
-              >
-                <img src={BlogSvg} alt="home-svg" />
-                Blog
-              </a>
-            </li>
-            <li
-              className={`active-menu-action ${
                 activeLink === "contact" ? "active" : ""
               }`}
               id="contact-line"
@@ -351,14 +334,14 @@ const Home = () => {
               </p>
               <div className="section-one-btns-main fade_down">
                 <div className="wrapper">
-                  <Link className="btn-hover" to="#">
+                  <a className="btn-hover" href="#portfolio">
                     View Work
-                  </Link>
+                  </a>
                 </div>
                 <div className="wrapper">
-                  <Link className="btn-hover btn-hover2" to="#">
+                  <a className="btn-hover btn-hover2" href="#contact">
                     Contact Me
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -405,71 +388,87 @@ const Home = () => {
         </section>
         {/* <!-- ====================================== Section Marquee ===================================== --> */}
         <section className="Marquee-main overflow-hidden">
-          <h3 className="fade_up">Trusted by World Leading Brands</h3>
           <div className="logos logos2">
             <div className="logos-slide">
               <div className="marquee__content">
                 <div className="marquee-img-main">
                   <img
                     className="brand-logos"
-                    src={BrandLogo1}
-                    alt="brand-logo1"
+                    src={Netflix}
+                    alt="Netflix logo"
+                    width={290}
+
                   />
                 </div>
                 <div className="marquee-img-main">
                   <img
                     className="brand-logos"
-                    src={BrandLogo2}
-                    alt="brand-logo2"
+                    src={Paheli}
+                    alt="Paheli-logo"
                   />
                 </div>
                 <div className="marquee-img-main">
                   <img
                     className="brand-logos"
-                    src={BrandLogo3}
-                    alt="brand-logo3"
+                    src={Adminkit}
+                    alt="Adminkit-logo"
+                    width={70}
+                    height={70}
+                  />
+                  <h4 className="text-white">Adminkit</h4>
+                </div>
+                <div className="marquee-img-main">
+                  <img
+                    className="brand-logos"
+                    src={Luminos}
+                    alt="Luminos-logo"
+                    width={200}
+                    height={70}
                   />
                 </div>
                 <div className="marquee-img-main">
                   <img
                     className="brand-logos"
-                    src={BrandLogo4}
-                    alt="brand-logo4"
+                    src={Edumim}
+                    alt="Edumim-logo"
+                    width={800}
+                    height={200}
                   />
                 </div>
                 <div className="marquee-img-main">
                   <img
                     className="brand-logos"
-                    src={BrandLogo5}
-                    alt="brand-logo5"
+                    src={Propertyfinder}
+                    alt="Propertyfinder-logo"
+                    width={500}
+                    height={100}
                   />
                 </div>
                 <div className="marquee-img-main">
                   <img
                     className="brand-logos"
-                    src={BrandLogo6}
-                    alt="brand-logo6"
+                    src={Booking}
+                    alt="Booking-logo"
+                    width={1000}
+                    height={200}
                   />
                 </div>
                 <div className="marquee-img-main">
                   <img
                     className="brand-logos"
-                    src={BrandLogo7}
-                    alt="brand-logo7"
+                    src={Amazon}
+                    alt="Amazon-logo"
+                    width={700}
+                    height={150}
                   />
                 </div>
                 <div className="marquee-img-main">
-                  <img
+                <img
                     className="brand-logos"
-                    src={BrandLogo8}
-                    alt="brand-logo8"
-                  />
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={BrandLogo7}
-                    alt="brand-logo9"
+                    src={Edumim}
+                    alt="Edumim-logo"
+                    width={800}
+                    height={200}
                   />
                 </div>
               </div>
@@ -492,9 +491,6 @@ const Home = () => {
         {/* <!-- ====================================== Section Pricing ===================================== --> */}
         <Pricing />
         {/* <!-- ====================================== Section Pricing ===================================== --> */}
-        {/* <!-- ====================================== Section Blogs ===================================== --> */}
-        <Blog />
-        {/* <!-- ====================================== Section Blogs ===================================== --> */}
         {/* <!-- ====================================== Section Contact ===================================== --> */}
         <Contact />
         {/* <!-- ====================================== Section Contact ===================================== --> */}

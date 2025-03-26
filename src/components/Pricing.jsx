@@ -62,8 +62,8 @@ const Pricing = () => {
             </div>
             <div className="choose-plain-btn-main">
               <div className="wrapper">
-                <a className="btn-hover" href="#">
-                  Choose Plan
+                <a className="btn-hover" href="#contact">
+                  Discuss project
                 </a>
               </div>
               <p className="taxes">10% tax will be added at checkout</p>
@@ -96,8 +96,8 @@ const Pricing = () => {
             </div>
             <div className="choose-plain-btn-main">
               <div className="wrapper">
-                <a className="btn-hover" href="#">
-                  Choose Plan
+                <a className="btn-hover" href="#contact">
+                Discuss project
                 </a>
               </div>
               <p className="taxes">10% tax will be added at checkout</p>
@@ -131,8 +131,8 @@ const Pricing = () => {
             </div>
             <div className="choose-plain-btn-main">
               <div className="wrapper">
-                <a className="btn-hover" href="#">
-                  Choose Plan
+                <a className="btn-hover" href="#contact">
+                  Discuss project
                 </a>
               </div>
               <p className="taxes">10% tax will be added at checkout</p>
