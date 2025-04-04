@@ -33,8 +33,12 @@ import Portfolio from "./Portfolio";
 import Pricing from "./Pricing";
 import Contact from "./Contact";
 import $ from "jquery";
-import CV from "../assets/pdf/olivia_resume.pdf";
+import CV from "../assets/Zartasha-Resume.pdf";
 import { Form, Link } from "react-router-dom";
+const openCV = () => {
+  window.open(CV, '_blank');
+};
+
 const Home = () => {
   //Text
   const firstTexts = ["Designer", "Developer", "Freelancer"];
@@ -136,6 +140,7 @@ const Home = () => {
     setActiveLink(id);
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
+ 
   return (
     <>
       <button id="menu-toggle" className="menu-toggle-button">
@@ -148,7 +153,11 @@ const Home = () => {
       {/* <!-- ====================================== Side Menu ===================================== --> */}
       <div className="side-menu">
         <div className="profile-img-main">
-          <img className="zoom_in" src={sidebarprofileimage} alt="profile-img" />
+          <img
+            className="zoom_in"
+            src={sidebarprofileimage}
+            alt="profile-img"
+          />
           <h1 className="fade_up">
             Zartasha <span>Kanwal</span>
           </h1>
@@ -286,36 +295,30 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <div id="wrap">
-            <Link
-              to={CV}
-              rel="noreferrer"
-              target="_blank"
-              className="btn-slide"
-            >
-              <span className="circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    className="download-svg"
-                    d="M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z"
-                    fill="white"
-                  />
-                </svg>
-              </span>
-              <span className="title">Download CV</span>
-              <span className="title-hover">Click Here</span>
-            </Link>{" "}
-          </div>
-        </div>
-      </div>
-
+        <div id="wrap">
+  <button onClick={openCV} className="btn-slide">
+    <span className="circle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          className="download-svg"
+          d="M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z"
+          fill="white"
+        />
+      </svg>
+    </span>
+    <span className="title">View CV</span>
+    <span className="title-hover">Click Here</span>
+  </button>
+</div>
+        
+         
+      </div>   
       {/* <!-- ====================================== Side Menu End ===================================== --> */}
       <div className="main-containe" data-bs-spy="scroll">
         {/* <!-- ====================================== Section One ===================================== --> */}
@@ -326,7 +329,7 @@ const Home = () => {
                 Zartasha <span>Kanwal</span>
               </h2>
               <h3 className="back-End-dev designer2">
-                 Front-end Web Developer
+                Front-end Web Developer
               </h3>
               <p className="best fade_down">
                 I truly appreciate your trust. My clients choose me and my work
@@ -397,15 +400,10 @@ const Home = () => {
                     src={Netflix}
                     alt="Netflix logo"
                     width={290}
-
                   />
                 </div>
                 <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Paheli}
-                    alt="Paheli-logo"
-                  />
+                  <img className="brand-logos" src={Paheli} alt="Paheli-logo" />
                 </div>
                 <div className="marquee-img-main">
                   <img
@@ -463,7 +461,7 @@ const Home = () => {
                   />
                 </div>
                 <div className="marquee-img-main">
-                <img
+                  <img
                     className="brand-logos"
                     src={Edumim}
                     alt="Edumim-logo"
