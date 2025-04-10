@@ -1,16 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import $ from "jquery";
-import Galleryimg1 from "../assets/images/gallery/gallery-img1.jpg";
-import Galleryimg2 from "../assets/images/gallery/gallery-img2.jpg";
-import Galleryimg3 from "../assets/images/gallery/gallery-img3.jpg";
-import Galleryimg4 from "../assets/images/gallery/gallery-img4.jpg";
-import Galleryimg5 from "../assets/images/gallery/gallery-img5.jpg";
-import Galleryimg6 from "../assets/images/gallery/gallery-img6.jpg";
-import Galleryimg7 from "../assets/images/gallery/gallery-img7.jpg";
-import Galleryimg8 from "../assets/images/gallery/gallery-img8.jpg";
-import Fancybox from "./FancyBox";
-import Popup from "./PopUp";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
@@ -117,24 +107,22 @@ const Portfolio = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <div className="second-row-portfolio youtube zoom_in">
-              <div className="image-container">
-                <img src="./images/Pheli.png" alt="Booking Clone" />
-                <div className="overlay">
-                  <p className="overlay-text">Paheli Cyber Security</p>
+              <div className="second-row-portfolio youtube zoom_in">
+                <div className="image-container">
+                  <img src="./images/Pheli.png" alt="Booking Clone" />
+                  <div className="overlay">
+                    <p className="overlay-text">Paheli Cyber Security</p>
+                  </div>
                 </div>
+                <p className="Corporate">Paheli Cyber Security</p>
+                <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
-              <p className="Corporate">Paheli Cyber Security</p>
-              <p className="Corporate-sub">React.js & Tailwind css</p>
-            </div>
             </a>
           </div>
 
           {/* Column 2 */}
           <div>
-            <div
-              className="image-container zoom_in"
-            >
+            <div className="image-container zoom_in">
               <img src="./images/Netflix.png" alt="Paheli Cyber Security" />
               <div className="overlay">
                 <p className="overlay-text">Netflix Clone</p>
@@ -146,34 +134,40 @@ const Portfolio = () => {
 
           {/* Column 3 */}
           <div className="gallery-bank-section">
-          <a
+            <a
               href="https://edumim-tau.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <div className="zoom_in">
-              <div className="image-container">
-                <img src="./images/Edumim.png" alt="Edumim Clone" />
-                <div className="overlay">
-                  <p className="overlay-text">Edumim Clone</p>
+              <div className="zoom_in">
+                <div className="image-container">
+                  <img src="./images/Edumim.png" alt="Edumim Clone" />
+                  <div className="overlay">
+                    <p className="overlay-text">Edumim Clone</p>
+                  </div>
                 </div>
+                <p className="Corporate">Edumim Clone</p>
+                <p className="Corporate-sub">React & Tailwind CSS</p>
               </div>
-              <p className="Corporate">Edumim Clone</p>
-              <p className="Corporate-sub">React & Tailwind CSS</p>
-            </div>
             </a>
 
             {/* Second row */}
-            <div className="second-row-portfolio popup-btn zoom_in">
-              <div className="image-container">
-                <img src="./images/luminos.png" alt="Behance Clone" />
-                <div className="overlay">
-                  <p className="overlay-text">Luminos Clone</p>
+            <a
+              href="https://drive-motion.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="second-row-portfolio popup-btn zoom_in">
+                <div className="image-container">
+                  <img src="./images/drive-motion.png" alt="Drive motion" />
+                  <div className="overlay">
+                    <p className="overlay-text">Drive motion</p>
+                  </div>
                 </div>
+                <p className="Corporate">Drive motion</p>
+                <p className="Corporate-sub">React + Tailwind CSS</p>
               </div>
-              <p className="Corporate">Luminos Clone</p>
-              <p className="Corporate-sub">Tailwind CSS</p>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -190,7 +184,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-    
       {/* <!-- ====================================== Section Portfolio End ===================================== --> */}
     </>
   );
