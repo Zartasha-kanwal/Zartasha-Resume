@@ -109,7 +109,7 @@ const Portfolio = () => {
             >
               <div className="second-row-portfolio youtube zoom_in">
                 <div className="image-container">
-                  <img src="./images/Pheli.png" alt="Booking Clone" />
+                  <img src="./images/Pheli.png" alt="Paheli cyber security Clone" />
                   <div className="overlay">
                     <p className="overlay-text">Paheli Cyber Security</p>
                   </div>
@@ -123,13 +123,33 @@ const Portfolio = () => {
           {/* Column 2 */}
           <div>
             <div className="image-container zoom_in">
-              <img src="./images/Netflix.png" alt="Paheli Cyber Security" />
+              <img src="./images/Netflix.png" alt="Netflix" />
               <div className="overlay">
                 <p className="overlay-text">Netflix Clone</p>
               </div>
             </div>
             <p className="Corporate zoom_in">Netflix Clone</p>
             <p className="Corporate-sub zoom_in">Tailwind CSS</p>
+           {/* Row-2 */}
+           <a
+              href="https://behance-phi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="second-row-portfolio youtube zoom_in">
+                <div className="image-container">
+                  <img src="./images/Behance.png" alt="Behance.net Clone" />
+                  <div className="overlay">
+                    <p className="overlay-text">Behance.net Clone</p>
+                  </div>
+                </div>
+                <p className="Corporate">Behance.net Clone</p>
+                <p className="Corporate-sub">React.js & Tailwind css</p>
+              </div>
+            </a>
+           
+
+
           </div>
 
           {/* Column 3 */}
