@@ -122,14 +122,21 @@ const Portfolio = () => {
 
           {/* Column 2 */}
           <div>
+           <a
+              href="https://apple-replica-sigma.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <div className="image-container zoom_in">
-              <img src="./images/Netflix.png" alt="Netflix" />
+              <img src="./images/Apple.png" alt="Netflix" />
               <div className="overlay">
-                <p className="overlay-text">Netflix Clone</p>
+                <p className="overlay-text">Apple.com Clone</p>
               </div>
             </div>
-            <p className="Corporate zoom_in">Netflix Clone</p>
-            <p className="Corporate-sub zoom_in">Tailwind CSS</p>
+            <p className="Corporate zoom_in">Apple.com Clone</p>
+            <p className="Corporate-sub zoom_in">Tailwind CSS + React.js</p>
+            </a>
+
            {/* Row-2 */}
            <a
               href="https://behance-phi.vercel.app/"
