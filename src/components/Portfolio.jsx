@@ -102,6 +102,7 @@ const Portfolio = () => {
             </a>
 
             {/* Second row */}
+
             <a
               href="https://paheli-cyber-security.vercel.app/"
               target="_blank"
@@ -109,36 +110,56 @@ const Portfolio = () => {
             >
               <div className="second-row-portfolio youtube zoom_in">
                 <div className="image-container">
-                  <img src="./images/Pheli.png" alt="Paheli cyber security Clone" />
+                  <img
+                    src="./images/Pheli.png"
+                    alt="Paheli cyber security Clone"
+                  />
                   <div className="overlay">
-                    <p className="overlay-text">Paheli Cyber Security</p>
+                    <p className="overlay-text">Paheli Cyber Security </p>
                   </div>
                 </div>
                 <p className="Corporate">Paheli Cyber Security</p>
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
+
+              <a
+              href="https://edumim-tau.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <img src="./images/Edumim.png" alt="Edumim Clone" />
+                  <div className="overlay">
+                    <p className="overlay-text">Edumim Clone</p>
+                  </div>
+                </div>
+                <p className="Corporate">Edumim Clone</p>
+                <p className="Corporate-sub">React & Tailwind CSS</p>
+              </div>
+            </a>
           </div>
 
           {/* Column 2 */}
           <div>
-           <a
+            <a
               href="https://apple-replica-sigma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <div className="image-container zoom_in">
-              <img src="./images/Apple.png" alt="Netflix" />
-              <div className="overlay">
-                <p className="overlay-text">Apple.com Clone</p>
+              <div className="image-container zoom_in">
+                <img src="./images/Apple.png" alt="Netflix" />
+                <div className="overlay">
+                  <p className="overlay-text">Apple.com Clone</p>
+                </div>
               </div>
-            </div>
-            <p className="Corporate zoom_in">Apple.com Clone</p>
-            <p className="Corporate-sub zoom_in">Tailwind CSS + React.js</p>
+              <p className="Corporate zoom_in">Apple.com Clone</p>
+              <p className="Corporate-sub zoom_in">Tailwind CSS + React.js</p>
             </a>
 
-           {/* Row-2 */}
-           <a
+            {/* Row-2 */}
+            <a
               href="https://behance-phi.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -154,26 +175,23 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
-           
-
-
           </div>
 
           {/* Column 3 */}
           <div className="gallery-bank-section">
-            <a
-              href="https://edumim-tau.vercel.app/"
+              <a
+              href="https://amazon-react-clone-six.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/Edumim.png" alt="Edumim Clone" />
+                  <img src="./images/Amazon.png" alt="Amazon Clone" />
                   <div className="overlay">
-                    <p className="overlay-text">Edumim Clone</p>
+                    <p className="overlay-text">Amazon clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Edumim Clone</p>
+                <p className="Corporate">Amazon Clone</p>
                 <p className="Corporate-sub">React & Tailwind CSS</p>
               </div>
             </a>
