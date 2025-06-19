@@ -4,72 +4,7 @@ import $ from "jquery";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-
-  const handlePopupOpen = (e) => {
-    e.preventDefault();
-    setIsPopupVisible(true);
-  };
-
-  const handlePopupClose = (e) => {
-    e.preventDefault();
-    setIsPopupVisible(false);
-  };
-
-  // Vimeo Modal
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
-  // Youtube Modal
-  const [isModalOpenYoutube, setisModalOpenYoutube] = useState(false);
-
-  const handleOpenModalYoutube = () => {
-    setisModalOpenYoutube(true);
-  };
-
-  const handleCloseModalYoutube = () => {
-    setisModalOpenYoutube(false);
-  };
-
-  // Soundcloud Modal
-  const [isModalOpenSound, setIsModalOpenSound] = useState(false);
-
-  const handleOpenModalSound = () => {
-    setIsModalOpenSound(true);
-  };
-
-  const handleCloseModalSound = () => {
-    setIsModalOpenSound(false);
-  };
-
-  useEffect(() => {
-    // Function to initialize fancybox for the gallery
-
-    // Event listener to toggle 'full' class on image click
-    const handleImageClick = (event) => {
-      event.target.classList.toggle("full");
-    };
-
-    // Attach click event to gallery images
-    const galleryLinks = document.querySelectorAll(".gallery-link img");
-    galleryLinks.forEach((link) => {
-      link.addEventListener("click", handleImageClick);
-    });
-
-    // Cleanup function to remove event listeners when component unmounts
-    return () => {
-      galleryLinks.forEach((link) => {
-        link.removeEventListener("click", handleImageClick);
-      });
-    };
-  }, []);
+  
   return (
     <>
       {/* <!-- ====================================== Section Portfolio ===================================== --> */}
@@ -123,22 +58,7 @@ const Portfolio = () => {
               </div>
             </a>
 
-              <a
-              href="https://edumim-tau.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <img src="./images/Edumim.png" alt="Edumim Clone" />
-                  <div className="overlay">
-                    <p className="overlay-text">Edumim Clone</p>
-                  </div>
-                </div>
-                <p className="Corporate">Edumim Clone</p>
-                <p className="Corporate-sub">React & Tailwind CSS</p>
-              </div>
-            </a>
+            
           </div>
 
           {/* Column 2 */}
@@ -175,6 +95,23 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
+
+             <a
+              href="https://edumim-tau.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <img src="./images/Edumim.png" alt="Edumim Clone" />
+                  <div className="overlay">
+                    <p className="overlay-text">Edumim Clone</p>
+                  </div>
+                </div>
+                <p className="Corporate">Edumim Clone</p>
+                <p className="Corporate-sub">React & Tailwind CSS</p>
+              </div>
+            </a>
           </div>
 
           {/* Column 3 */}
@@ -198,6 +135,23 @@ const Portfolio = () => {
 
             {/* Second row */}
             <a
+              href="https://ecommerce-app-sepia-three.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="second-row-portfolio popup-btn zoom_in">
+                <div className="image-container">
+                  <img src="./images/Ecommerce-app.png" alt="Ecommerce App" />
+                  <div className="overlay">
+                    <p className="overlay-text">Ecommerce App</p>
+                  </div>
+                </div>
+                <p className="Corporate">Ecommerce App</p>
+                <p className="Corporate-sub">React + Tailwind CSS</p>
+              </div>
+            </a>
+
+            <a
               href="https://drive-motion.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -213,6 +167,10 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React + Tailwind CSS</p>
               </div>
             </a>
+
+
+
+           
           </div>
         </div>
 
