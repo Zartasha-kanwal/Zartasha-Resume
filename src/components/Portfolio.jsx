@@ -135,18 +135,18 @@ const Portfolio = () => {
 
             {/* Second row */}
             <a
-              href="https://ecommerce-app-sepia-three.vercel.app/"
+              href="https://ecommerce-frontend-bice-rho.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="second-row-portfolio popup-btn zoom_in">
                 <div className="image-container">
-                  <img src="./images/Ecommerce-app.png" alt="Ecommerce App" />
+                  <img src="./images/New-ecommerce.png" alt="Ecommerce App" />
                   <div className="overlay">
                     <p className="overlay-text">Ecommerce App</p>
                   </div>
                 </div>
-                <p className="Corporate">Ecommerce App</p>
+                <p className="Corporate">Full-stack Ecommerce App</p>
                 <p className="Corporate-sub">React + Tailwind CSS</p>
               </div>
             </a>
