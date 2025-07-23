@@ -4,7 +4,6 @@ import $ from "jquery";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
-  
   return (
     <>
       {/* <!-- ====================================== Section Portfolio ===================================== --> */}
@@ -39,6 +38,25 @@ const Portfolio = () => {
             {/* Second row */}
 
             <a
+              href="https://gta-vi-web-lime.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="second-row-portfolio youtube zoom_in">
+                <div className="image-container">
+                  <img src="./images/GTA-VI.png" alt="GTA-VI UI" />
+                  <div className="overlay">
+                    <p className="overlay-text">GTA-VI UI </p>
+                  </div>
+                </div>
+                <p className="Corporate">GTA-VI UI</p>
+                <p className="Corporate-sub">React.js, Tailwind css & GSAP</p>
+              </div>
+            </a>
+
+            {/* Third row */}
+
+            <a
               href="https://paheli-cyber-security.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -57,8 +75,6 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
-
-            
           </div>
 
           {/* Column 2 */}
@@ -96,27 +112,27 @@ const Portfolio = () => {
               </div>
             </a>
 
-             <a
-              href="https://edumim-tau.vercel.app/"
+            <a
+              href="https://bottle-animation-one.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/Edumim.png" alt="Edumim Clone" />
+                  <img src="./images/Bottle.png" alt="Animated Bottle UI" />
                   <div className="overlay">
-                    <p className="overlay-text">Edumim Clone</p>
+                    <p className="overlay-text">Animated Bottle UI</p>
                   </div>
                 </div>
-                <p className="Corporate">Edumim Clone</p>
-                <p className="Corporate-sub">React & Tailwind CSS</p>
+                <p className="Corporate">Animated Bottle UI</p>
+                <p className="Corporate-sub">React, Tailwind CSS & GSAP</p>
               </div>
             </a>
           </div>
 
           {/* Column 3 */}
           <div className="gallery-bank-section">
-              <a
+            <a
               href="https://amazon-react-clone-six.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -168,9 +184,22 @@ const Portfolio = () => {
               </div>
             </a>
 
-
-
-           
+            <a
+              href="https://edumim-tau.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <img src="./images/Edumim.png" alt="Edumim Clone" />
+                  <div className="overlay">
+                    <p className="overlay-text">Edumim Clone</p>
+                  </div>
+                </div>
+                <p className="Corporate">Edumim Clone</p>
+                <p className="Corporate-sub">React & Tailwind CSS</p>
+              </div>
+            </a>
           </div>
         </div>
 
