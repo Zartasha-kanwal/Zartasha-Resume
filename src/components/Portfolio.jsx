@@ -168,19 +168,19 @@ const Portfolio = () => {
             </a>
 
             <a
-              href="https://drive-motion.vercel.app/"
+              href="https://zentry-app-sigma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="second-row-portfolio popup-btn zoom_in">
                 <div className="image-container">
-                  <img src="./images/drive-motion.png" alt="Drive motion" />
+                  <img src="./images/Zentry.png" alt="Zentry UI Clone" />
                   <div className="overlay">
-                    <p className="overlay-text">Drive motion</p>
+                    <p className="overlay-text">Zentry UI Clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Drive motion</p>
-                <p className="Corporate-sub">React + Tailwind CSS</p>
+                <p className="Corporate">Zentry UI Clone</p>
+                <p className="Corporate-sub">React.js + Tailwind CSS & GSAP</p>
               </div>
             </a>
 
