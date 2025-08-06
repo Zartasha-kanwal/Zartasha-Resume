@@ -75,6 +75,24 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
+
+
+            <a
+              href="https://ochi-replica.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <img src="./images/ochi.png" alt="Ochi.design Clone" />
+                  <div className="overlay">
+                    <p className="overlay-text">Ochi.design Clone</p>
+                  </div>
+                </div>
+                <p className="Corporate">Ochi.design Clone</p>
+                <p className="Corporate-sub">React , Tailwind CSS & Framer motion</p>
+              </div>
+            </a>
           </div>
 
           {/* Column 2 */}
@@ -96,19 +114,19 @@ const Portfolio = () => {
 
             {/* Row-2 */}
             <a
-              href="https://behance-phi.vercel.app/"
+              href="https://zentry-app-sigma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="second-row-portfolio youtube zoom_in">
+              <div className="second-row-portfolio popup-btn zoom_in">
                 <div className="image-container">
-                  <img src="./images/Behance.png" alt="Behance.net Clone" />
+                  <img src="./images/Zentry.png" alt="Zentry UI Clone" />
                   <div className="overlay">
-                    <p className="overlay-text">Behance.net Clone</p>
+                    <p className="overlay-text">Zentry UI Clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Behance.net Clone</p>
-                <p className="Corporate-sub">React.js & Tailwind css</p>
+                <p className="Corporate">Zentry UI Clone</p>
+                <p className="Corporate-sub">React.js + Tailwind CSS & GSAP</p>
               </div>
             </a>
 
@@ -168,38 +186,23 @@ const Portfolio = () => {
             </a>
 
             <a
-              href="https://zentry-app-sigma.vercel.app/"
+              href="https://behance-phi.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="second-row-portfolio popup-btn zoom_in">
+              <div className="second-row-portfolio youtube zoom_in">
                 <div className="image-container">
-                  <img src="./images/Zentry.png" alt="Zentry UI Clone" />
+                  <img src="./images/Behance.png" alt="Behance.net Clone" />
                   <div className="overlay">
-                    <p className="overlay-text">Zentry UI Clone</p>
+                    <p className="overlay-text">Behance.net Clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Zentry UI Clone</p>
-                <p className="Corporate-sub">React.js + Tailwind CSS & GSAP</p>
+                <p className="Corporate">Behance.net Clone</p>
+                <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
 
-            <a
-              href="https://edumim-tau.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <img src="./images/Edumim.png" alt="Edumim Clone" />
-                  <div className="overlay">
-                    <p className="overlay-text">Edumim Clone</p>
-                  </div>
-                </div>
-                <p className="Corporate">Edumim Clone</p>
-                <p className="Corporate-sub">React & Tailwind CSS</p>
-              </div>
-            </a>
+            
           </div>
         </div>
 
