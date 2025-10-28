@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useState } from "react";
 import EmailSvg from "../assets/images/svg/email-svg.svg";
 import Linkedin from "../assets/images/svg/Linkedin-svg.svg";
 import Freelancer from "../assets/images/svg/Freelancer-svg.svg";
@@ -34,9 +34,9 @@ import Pricing from "./Pricing";
 import Contact from "./Contact";
 import $ from "jquery";
 import CV from "../assets/Zartasha-Resume.pdf";
-import { Form, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 const openCV = () => {
-  window.open(CV, '_blank');
+  window.open(CV, "_blank");
 };
 
 const Home = () => {
@@ -140,7 +140,7 @@ const Home = () => {
     setActiveLink(id);
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
- 
+
   return (
     <>
       <button id="menu-toggle" className="menu-toggle-button">
@@ -173,7 +173,7 @@ const Home = () => {
             </a>
 
             <Link
-              to="https://www.linkedin.com/in/zartasha-kanwal-105a46354"
+              to="https://www.linkedin.com/in/zartasha-kanwal"
               className="profile-media-icons"
             >
               <img src={Linkedin} alt="linkedin-svg" width="20" height="20" />
@@ -189,6 +189,18 @@ const Home = () => {
               className="profile-media-icons"
             >
               <img src={Upwork} alt="medium-svg" width="25" height="25" />
+            </Link>
+            <Link
+              to="https://www.fiverr.com/s/XLK04G0"
+              className="profile-media-icons"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/fiverr.svg"
+                alt="fiverr-icon"
+                width="25"
+                height="25"
+                style={{ filter: "invert(1)" }}
+              />
             </Link>
           </div>
         </div>
@@ -296,29 +308,27 @@ const Home = () => {
           </ul>
         </div>
         <div id="wrap">
-  <button onClick={openCV} className="btn-slide">
-    <span className="circle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <path
-          className="download-svg"
-          d="M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z"
-          fill="white"
-        />
-      </svg>
-    </span>
-    <span className="title">View CV</span>
-    <span className="title-hover">Click Here</span>
-  </button>
-</div>
-        
-         
-      </div>   
+          <button onClick={openCV} className="btn-slide">
+            <span className="circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  className="download-svg"
+                  d="M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            <span className="title">View CV</span>
+            <span className="title-hover">Click Here</span>
+          </button>
+        </div>
+      </div>
       {/* <!-- ====================================== Side Menu End ===================================== --> */}
       <div className="main-containe" data-bs-spy="scroll">
         {/* <!-- ====================================== Section One ===================================== --> */}

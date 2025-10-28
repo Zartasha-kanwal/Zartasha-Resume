@@ -30,15 +30,18 @@ const AboutSection = () => {
           <div className="line"></div>
         </div>
         <p className="section-sub-text about-sub-text zoom_in">
-          Hi, I’m <span>Zartasha Kanwal,</span> Front-End Developer with
-          expertise in React.js, Tailwind CSS, and Bootstrap along with a strong
-          foundation in HTML, CSS, and JavaScript.I specialize in building
-          modern, responsive, and visually appealing web applications. I focus
-          on writing clean, efficient code and creating seamless user
-          experiences. Passionate about UI/UX, I continuously explore the latest
-          web technologies to deliver high-quality projects. I’m open to
-          freelance opportunities and collaborations to bring creative ideas to
-          life. Let’s build something amazing!
+          Hi, I’m <span>Zartasha Kanwal,</span> a
+          Frontend Developer passionate about crafting modern, responsive, and
+          user-friendly web applications. I specialize in React.js, Next.js, and
+          TypeScript, with strong experience in Tailwind CSS, Bootstrap, and
+          GSAP for interactive animations. I enjoy transforming ideas into
+          visually engaging digital experiences through clean code, seamless
+          UI/UX, and performance-focused development. My work often involves API
+          integration and state management using tools like Redux, Zustand,
+          Apollo Client, and TanStack Query. When I’m not coding, I love
+          exploring new frontend trends and refining my design sense to keep my
+          projects creative and up to date. Let’s collaborate and build
+          something amazing together!
         </p>
         <div className="about-detail-main">
           <p className="about-detail">Name</p>
@@ -62,7 +65,7 @@ const AboutSection = () => {
 
         <div className="about-detail-main">
           <p className="about-detail">Experience</p>
-          <p className="about-detail-info">2 years</p>
+          <p className="about-detail-info">3 years</p>
         </div>
         <div className="about-detail-main">
           <p className="about-detail">Freelance</p>
@@ -70,7 +73,7 @@ const AboutSection = () => {
         </div>
         <div className="about-detail-main">
           <p className="about-detail">Language</p>
-          <p className="about-detail-info">English</p>
+          <p className="about-detail-info">English-Urdu</p>
         </div>
       </section>
       {/* <!-- ====================================== Section About End ===================================== --> */}
