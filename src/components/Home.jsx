@@ -77,14 +77,7 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Logo marquee
-  useEffect(() => {
-    document.querySelectorAll(".logos").forEach(function (logosContainer) {
-      const copy = logosContainer.querySelector(".logos-slide").cloneNode(true);
-      logosContainer.appendChild(copy);
-    });
-  }, []);
-
+  
   // Toggle Btn
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -394,90 +387,6 @@ const Home = () => {
                     alt="clients-img4"
                   />
                   <p className="worked-more worked-more2"> 100+ Clients</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* <!-- ====================================== Section Marquee ===================================== --> */}
-        <section className="Marquee-main overflow-hidden">
-          <div className="logos logos2">
-            <div className="logos-slide">
-              <div className="marquee__content">
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Netflix}
-                    alt="Netflix logo"
-                    width={290}
-                  />
-                </div>
-                <div className="marquee-img-main">
-                  <img className="brand-logos" src={Paheli} alt="Paheli-logo" />
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Adminkit}
-                    alt="Adminkit-logo"
-                    width={70}
-                    height={70}
-                  />
-                  <h4 className="text-white">Adminkit</h4>
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Luminos}
-                    alt="Luminos-logo"
-                    width={200}
-                    height={70}
-                  />
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Edumim}
-                    alt="Edumim-logo"
-                    width={800}
-                    height={200}
-                  />
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Propertyfinder}
-                    alt="Propertyfinder-logo"
-                    width={500}
-                    height={100}
-                  />
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Booking}
-                    alt="Booking-logo"
-                    width={1000}
-                    height={200}
-                  />
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Amazon}
-                    alt="Amazon-logo"
-                    width={700}
-                    height={150}
-                  />
-                </div>
-                <div className="marquee-img-main">
-                  <img
-                    className="brand-logos"
-                    src={Edumim}
-                    alt="Edumim-logo"
-                    width={800}
-                    height={200}
-                  />
                 </div>
               </div>
             </div>

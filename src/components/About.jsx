@@ -30,13 +30,13 @@ const AboutSection = () => {
           <div className="line"></div>
         </div>
         <p className="section-sub-text about-sub-text zoom_in">
-          Hi, I’m <span>Zartasha Kanwal,</span> a
-          Frontend Developer passionate about crafting modern, responsive, and
-          user-friendly web applications. I specialize in React.js, Next.js, and
-          TypeScript, with strong experience in Tailwind CSS, Bootstrap, and
-          GSAP for interactive animations. I enjoy transforming ideas into
-          visually engaging digital experiences through clean code, seamless
-          UI/UX, and performance-focused development. My work often involves API
+          Hi, I’m <span>Zartasha Kanwal,</span> a Frontend Developer passionate
+          about crafting modern, responsive, and user-friendly web applications.
+          I specialize in React.js, Next.js, and TypeScript, with strong
+          experience in Tailwind CSS, Bootstrap, and GSAP for interactive
+          animations. I enjoy transforming ideas into visually engaging digital
+          experiences through clean code, seamless UI/UX, and
+          performance-focused development. My work often involves API
           integration and state management using tools like Redux, Zustand,
           Apollo Client, and TanStack Query. When I’m not coding, I love
           exploring new frontend trends and refining my design sense to keep my

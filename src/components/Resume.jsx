@@ -4,145 +4,87 @@ const Resume = () => {
   return (
     <>
       {/* <!-- ====================================== Section Education Experience ===================================== --> */}
-      <section className="education-experience" id="resume">
-        <div className="row">
-          <div className="col-xxl-6 col-lg-6">
-            <div className="heading-container">
-              <h2 className="section-heading-text about-me fade_up">
-                Education.
-              </h2>
-              <div className="line"></div>
-            </div>
-            <div className="education position-relative fade_up">
-              <div className="side_circle_ring">
-                <div className="small_yellow_border">
-                  <div className="small_yellow_circle"></div>
-                </div>
-              </div>
-              <div className="small_yellow_border_main">
-                <p className="bachelor">Bachelor's in Computer Science</p>
-                <p className="cursus university">
-                  Islamia University Bahawalpur / 2018 - 2022
-                </p>
-                <p className="cursus">
-                  Focused on web development, UI/UX design, and modern front-end
-                  technologies. Developed multiple projects using React.js,
-                  JavaScript, and responsive design.
-                </p>
-              </div>
-            </div>
-            <div className="education position-relative fade_up">
-              <div className="side_circle_ring">
-                <div className="small_yellow_border">
-                  <div className="small_yellow_circle"></div>
-                </div>
-              </div>
-              <div className="small_yellow_border_main">
-                <p className="bachelor">Web Development Certification</p>
-                <p className="cursus university">Online Course / 2022 - 2023</p>
-                <p className="cursus">
-                  Specialized in React.js, Tailwind CSS, and JavaScript. Built
-                  dynamic and responsive web applications while mastering modern
-                  front-end frameworks.
-                </p>
-              </div>
-            </div>
-            <div className="education position-relative fade_up">
-              <div className="side_circle_ring">
-                <div className="small_yellow_border">
-                  <div className="small_yellow_circle"></div>
-                </div>
-              </div>
-              <div className="small_yellow_border_main">
-                <p className="bachelor">Frontend Development Training</p>
-                <p className="cursus university">
-                  Self-Learning & Freelance Projects / Ongoing
-                </p>
-                <p className="cursus">
-                  Continuously enhancing skills in React.js, GSAP animations,
-                  and UI/UX design. Working on real-world projects and freelance
-                  assignments.
-                </p>
-              </div>
+      <section className="resume" id="resume">
+        {/* ===== Education Section ===== */}
+        <div className="education-section fade_up">
+          <div className="heading-container">
+            <h2 className="section-title">Education.</h2>
+            <div className="line"></div>
+          </div>
+
+          <div className="education-item fade_up">
+            <div className="circle"></div>
+            <div className="content">
+              <h3>Bachelor's in Computer Science</h3>
+              <span>Islamia University Bahawalpur / 2021 - 2025</span>
+              <p>
+                Focused on web development, UI/UX design, and modern front-end
+                technologies. Developed multiple projects using React.js,
+                Next.js, TypeScript, JavaScript, and responsive design.
+              </p>
             </div>
           </div>
-          <div className="col-xxl-6 col-lg-6">
-            <div className="heading-container">
-              <h2 className="section-heading-text about-me fade_up">
-                Experience.
-              </h2>
-              <div className="line"></div>
-            </div>
+        </div>
 
-            {/* Hatzs Dimensions Internship */}
-            <div className="education position-relative fade_up">
-              <div className="side_circle_ring">
-                <div className="small_yellow_border">
-                  <div className="small_yellow_circle"></div>
+        {/* ===== Experience Section ===== */}
+        <div className="experience-section fade_up">
+          <div className="heading-container">
+            <h2 className="section-title">Experience.</h2>
+            <div className="line"></div>
+          </div>
+
+          <div className="experience-columns">
+            {/* Column 1 */}
+            <div className="column">
+              <div className="experience-item fade_up">
+                <div className="circle"></div>
+                <div className="content">
+                  <h3>Frontend Developer Intern</h3>
+                  <span>Hatzs Dimensions / Remote / Jul 2025 - Oct 2025</span>
+                  <p>
+                    Contributed to live projects focusing on responsive UI
+                    development using React.js, Next.js, and TypeScript.
+                    Integrated APIs and managed state using Redux, Zustand,
+                    Apollo Client, and TanStack Query.
+                  </p>
                 </div>
               </div>
-              <div className="small_yellow_border_main">
-                <p className="bachelor">Frontend Developer Intern</p>
-                <p className="cursus university">
-                  Hatzs Dimensions / Remote Internship / July 2025 - October
-                  2025
-                </p>
-                <p className="cursus">
-                  Contributed to live projects focusing on responsive UI
-                  development using React.js, Next.js, and TypeScript.
-                  Integrated APIs and managed state using Redux, Zustand, Apollo
-                  Client, and TanStack Query. Collaborated with the frontend
-                  team to create high-performance, user-centric web experiences
-                  with modern UI practices.
-                </p>
-              </div>
-            </div>
 
-            {/* Freelance Frontend Developer */}
-            <div className="education position-relative fade_up">
-              <div className="side_circle_ring">
-                <div className="small_yellow_border">
-                  <div className="small_yellow_circle"></div>
+              <div className="experience-item fade_up">
+                <div className="circle"></div>
+                <div className="content">
+                  <h3>React.js Developer (Personal Projects)</h3>
+                  <span>GitHub & Open Source / 2023 - Present</span>
+                  <p>
+                    Developed clones of popular websites (Netflix, AdminKit
+                    Dashboard, Edumim, Behance, Apple.com, Amazon.com).
+                    Experimented with GSAP animations for enhanced UI.
+                  </p>
                 </div>
-              </div>
-              <div className="small_yellow_border_main">
-                <p className="bachelor">Freelance Frontend Developer</p>
-                <p className="cursus university">
-                  Self-Employed / 2023 - Present
-                </p>
-                <p className="cursus">
-                  Building responsive and dynamic websites using React.js,
-                  Tailwind CSS, Bootstrap, and JavaScript. Worked with
-                  international clients to create modern UI/UX designs.
-                </p>
               </div>
             </div>
 
-            {/* Personal Projects */}
-            <div className="education position-relative fade_up">
-              <div className="side_circle_ring">
-                <div className="small_yellow_border">
-                  <div className="small_yellow_circle"></div>
+            {/* Column 2 */}
+            <div className="column">
+              <div className="experience-item fade_up">
+                <div className="circle"></div>
+                <div className="content">
+                  <h3>Freelance Frontend Developer</h3>
+                  <span>Self-Employed / 2023 – Present</span>
+                  <p>
+                    Delivering responsive and modern web interfaces using
+                    React.js, Next.js, Tailwind CSS, and JavaScript. Worked with
+                    international clients to translate UI designs into clean,
+                    maintainable code while ensuring performance and
+                    accessibility.
+                  </p>
                 </div>
-              </div>
-              <div className="small_yellow_border_main">
-                <p className="bachelor">
-                  React.js Developer (Personal Projects)
-                </p>
-                <p className="cursus university">
-                  GitHub & Open Source / 2023 - Present
-                </p>
-                <p className="cursus">
-                  Developed clones of popular websites (Netflix, AdminKit
-                  Dashboard, Paheli Cyber Security, Edumim, Behance,
-                  Booking.com, and PropertyFinder.ae). Experimented with GSAP
-                  animations for enhanced UI.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* <!-- ====================================== Section Education Experience End ===================================== --> */}
 
       {/* <!-- ====================================== Section Skills ===================================== --> */}

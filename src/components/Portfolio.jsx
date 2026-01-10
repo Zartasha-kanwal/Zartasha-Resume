@@ -17,22 +17,30 @@ const Portfolio = () => {
         <div className="portfolios-group-main">
           {/* Column 1 */}
           <div>
+        
+
             <a
               href="https://adminkit-demo.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="image-container popup-btn zoom_in">
-                <img src="./images/Adminkit.png" alt="Adminkit-demo" />
-                <div className="overlay">
-                  <p className="overlay-text">Adminkit-Demo</p>
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/Adminkit-web.mp4"
+                    alt="Adminkit-Demo"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">Adminkit-Demo</p>
+                  </div>
                 </div>
+                <p className="Corporate">Adminkit-Demo</p>
+                <p className="Corporate-sub">React.js & Tailwind CSS</p>
               </div>
-
-              <p className="Corporate zoom_in">Adminkit-Demo</p>
-              <p className="Corporate-sub zoom_in">
-                React.js, Tailwind CSS and JS
-              </p>
             </a>
 
             {/* Second row */}
@@ -42,15 +50,22 @@ const Portfolio = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="second-row-portfolio youtube zoom_in">
+              <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/GTA-VI.png" alt="GTA-VI UI" />
+                  <video
+                    src="./images/GTA-VI-web.mp4"
+                    alt="GTA-VI UI"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
                   <div className="overlay">
-                    <p className="overlay-text">GTA-VI UI </p>
+                    <p className="overlay-text">GTA-VI UI</p>
                   </div>
                 </div>
                 <p className="Corporate">GTA-VI UI</p>
-                <p className="Corporate-sub">React.js, Tailwind css & GSAP</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
               </div>
             </a>
 
@@ -76,7 +91,6 @@ const Portfolio = () => {
               </div>
             </a>
 
-
             <a
               href="https://ochi-replica.vercel.app/"
               target="_blank"
@@ -84,49 +98,74 @@ const Portfolio = () => {
             >
               <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/ochi.png" alt="Ochi.design Clone" />
+                  <video
+                    src="./images/Ochi-web.mp4"
+                    alt="Ochi.design"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
                   <div className="overlay">
-                    <p className="overlay-text">Ochi.design Clone</p>
+                    <p className="overlay-text">Ochi.design</p>
                   </div>
                 </div>
-                <p className="Corporate">Ochi.design Clone</p>
-                <p className="Corporate-sub">React , Tailwind CSS & Framer motion</p>
+                <p className="Corporate">Ochi.design</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
               </div>
             </a>
           </div>
 
           {/* Column 2 */}
           <div>
+
             <a
               href="https://apple-replica-sigma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="image-container zoom_in">
-                <img src="./images/Apple.png" alt="Netflix" />
-                <div className="overlay">
-                  <p className="overlay-text">Apple.com Clone</p>
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/Apple-web.mp4"
+                    alt="Apple.com Clone"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">Apple.com Clone</p>
+                  </div>
                 </div>
+                <p className="Corporate">Apple.com Clone</p>
+                <p className="Corporate-sub">Tailwind CSS + React.js</p>
               </div>
-              <p className="Corporate zoom_in">Apple.com Clone</p>
-              <p className="Corporate-sub zoom_in">Tailwind CSS + React.js</p>
             </a>
 
             {/* Row-2 */}
-            <a
+           
+             <a
               href="https://zentry-app-sigma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="second-row-portfolio popup-btn zoom_in">
+              <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/Zentry.png" alt="Zentry UI Clone" />
+                  <video
+                    src="./images/Zentry-web.mp4"
+                    alt="Zentry UI Clone"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
                   <div className="overlay">
                     <p className="overlay-text">Zentry UI Clone</p>
                   </div>
                 </div>
                 <p className="Corporate">Zentry UI Clone</p>
-                <p className="Corporate-sub">React.js + Tailwind CSS & GSAP</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
               </div>
             </a>
 
@@ -146,6 +185,31 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React, Tailwind CSS & GSAP</p>
               </div>
             </a>
+
+
+             <a
+              href="https://spylt-app.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/spylt-video.mp4"
+                    alt="Spylt-clone"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">Spylt clone</p>
+                  </div>
+                </div>
+                <p className="Corporate">Spylt clone</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
+              </div>
+            </a>
           </div>
 
           {/* Column 3 */}
@@ -157,12 +221,19 @@ const Portfolio = () => {
             >
               <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/Amazon.png" alt="Amazon Clone" />
+                  <video
+                    src="./images/Amazon-web.mp4"
+                    alt="Amazon clone"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
                   <div className="overlay">
                     <p className="overlay-text">Amazon clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Amazon Clone</p>
+                <p className="Corporate">Amazon clone</p>
                 <p className="Corporate-sub">React & Tailwind CSS</p>
               </div>
             </a>
@@ -201,8 +272,6 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
-
-            
           </div>
         </div>
 
