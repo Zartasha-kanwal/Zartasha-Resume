@@ -17,8 +17,6 @@ const Portfolio = () => {
         <div className="portfolios-group-main">
           {/* Column 1 */}
           <div>
-        
-
             <a
               href="https://adminkit-demo.vercel.app"
               target="_blank"
@@ -72,26 +70,6 @@ const Portfolio = () => {
             {/* Third row */}
 
             <a
-              href="https://paheli-cyber-security.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="second-row-portfolio youtube zoom_in">
-                <div className="image-container">
-                  <img
-                    src="./images/Pheli.png"
-                    alt="Paheli cyber security Clone"
-                  />
-                  <div className="overlay">
-                    <p className="overlay-text">Paheli Cyber Security </p>
-                  </div>
-                </div>
-                <p className="Corporate">Paheli Cyber Security</p>
-                <p className="Corporate-sub">React.js & Tailwind css</p>
-              </div>
-            </a>
-
-            <a
               href="https://ochi-replica.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -114,11 +92,27 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
               </div>
             </a>
+
+            <a
+              href="https://ecommerce-frontend-bice-rho.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="second-row-portfolio popup-btn zoom_in">
+                <div className="image-container">
+                  <img src="./images/New-ecommerce.png" alt="Ecommerce App" />
+                  <div className="overlay">
+                    <p className="overlay-text">Ecommerce App</p>
+                  </div>
+                </div>
+                <p className="Corporate">Full-stack Ecommerce App</p>
+                <p className="Corporate-sub">React + Tailwind CSS</p>
+              </div>
+            </a>
           </div>
 
           {/* Column 2 */}
           <div>
-
             <a
               href="https://apple-replica-sigma.vercel.app/"
               target="_blank"
@@ -144,8 +138,8 @@ const Portfolio = () => {
             </a>
 
             {/* Row-2 */}
-           
-             <a
+
+            <a
               href="https://zentry-app-sigma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -170,24 +164,6 @@ const Portfolio = () => {
             </a>
 
             <a
-              href="https://bottle-animation-one.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <img src="./images/Bottle.png" alt="Animated Bottle UI" />
-                  <div className="overlay">
-                    <p className="overlay-text">Animated Bottle UI</p>
-                  </div>
-                </div>
-                <p className="Corporate">Animated Bottle UI</p>
-                <p className="Corporate-sub">React, Tailwind CSS & GSAP</p>
-              </div>
-            </a>
-
-
-             <a
               href="https://spylt-app.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -208,6 +184,23 @@ const Portfolio = () => {
                 </div>
                 <p className="Corporate">Spylt clone</p>
                 <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
+              </div>
+            </a>
+
+            <a
+              href="https://bottle-animation-one.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <img src="./images/Bottle.png" alt="Animated Bottle UI" />
+                  <div className="overlay">
+                    <p className="overlay-text">Animated Bottle UI</p>
+                  </div>
+                </div>
+                <p className="Corporate">Animated Bottle UI</p>
+                <p className="Corporate-sub">React, Tailwind CSS & GSAP</p>
               </div>
             </a>
           </div>
@@ -239,36 +232,51 @@ const Portfolio = () => {
             </a>
 
             {/* Second row */}
-            <a
-              href="https://ecommerce-frontend-bice-rho.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="second-row-portfolio popup-btn zoom_in">
-                <div className="image-container">
-                  <img src="./images/New-ecommerce.png" alt="Ecommerce App" />
-                  <div className="overlay">
-                    <p className="overlay-text">Ecommerce App</p>
-                  </div>
-                </div>
-                <p className="Corporate">Full-stack Ecommerce App</p>
-                <p className="Corporate-sub">React + Tailwind CSS</p>
-              </div>
-            </a>
 
             <a
               href="https://behance-phi.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="second-row-portfolio youtube zoom_in">
+              <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/Behance.png" alt="Behance.net Clone" />
+                  <video
+                    src="./images/Behance-web.mp4"
+                    alt="Behance.net Clone"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
                   <div className="overlay">
                     <p className="overlay-text">Behance.net Clone</p>
                   </div>
                 </div>
                 <p className="Corporate">Behance.net Clone</p>
+                <p className="Corporate-sub">React.js & Tailwind css</p>
+              </div>
+            </a>
+
+            <a
+              href="https://paheli-cyber-security.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/Paheli-web.mp4"
+                    alt="Paheli Cyber Security"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">Paheli Cyber Security</p>
+                  </div>
+                </div>
+                <p className="Corporate">Paheli Cyber Security</p>
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>

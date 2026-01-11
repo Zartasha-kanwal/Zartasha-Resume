@@ -1,45 +1,4 @@
-import React, { useEffect, useState } from "react";
-
 const Contact = () => {
-  const [inputState, setInputState] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  useEffect(() => {
-    const inputs = document.querySelectorAll("input");
-
-    inputs.forEach((input) => {
-      input.addEventListener("focus", () => {
-        input.parentElement.classNameList.add("active");
-      });
-
-      input.addEventListener("focusout", () => {
-        if (input.value === "") {
-          input.parentElement.classNameList.remove("active");
-        } else {
-          input.parentElement.classNameList.add("active");
-        }
-      });
-    });
-
-    return () => {
-      inputs.forEach((input) => {
-        input.removeEventListener("focus", () => {});
-        input.removeEventListener("focusout", () => {});
-      });
-    };
-  }, []);
-
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setInputState((prevState) => ({
-      ...prevState,
-      [id]: value,
-    }));
-  };
   return (
     <>
       {/* <!-- ====================================== Section Contact ===================================== --> */}
@@ -83,77 +42,12 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="form-container">
-          <div className="form">
-            <label htmlFor="name" className="form__label">
-              NAME
-            </label>
-            <input
-              type="text"
-              className="form__input"
-              placeholder="Your name"
-              id="name"
-              required
-              autoComplete="off"
-              value={inputState.name}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form">
-            <label htmlFor="email" className="form__label">
-              EMAIL
-            </label>
-            <input
-              type="email"
-              className="form__input"
-              placeholder="Your email"
-              id="email"
-              required
-              autoComplete="off"
-              value={inputState.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form subject-input-main">
-            <label htmlFor="subject" className="form__label">
-              SUBJECT
-            </label>
-            <input
-              type="text"
-              className="form__input"
-              placeholder="Your subject"
-              id="subject"
-              required
-              autoComplete="off"
-              value={inputState.subject}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form">
-            <label htmlFor="message" className="form__label">
-              MESSAGE
-            </label>
-            <input
-              type="text"
-              className="form__input"
-              placeholder="Write your text..."
-              id="message"
-              required
-              autoComplete="off"
-              value={inputState.message}
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-        <div className="wrapper blog-btn">
-          <a className="btn-hover" href="#">
-            Submit Now
-          </a>
-        </div>
         <div className="footer">
-          © 2025 | All rights reserved by
+          © 2026 | All rights reserved by
           <span>
-            <a href="https://1.envato.market/website-portfolio">Zartasha Kanwal</a>
+            <a href="https://1.envato.market/website-portfolio">
+              Zartasha Kanwal
+            </a>
           </span>
         </div>
       </section>
