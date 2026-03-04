@@ -74,8 +74,9 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [firstTexts.length, secondTexts.length]);
 
-  // Menu toggle state
-  const [menuOpen, setMenuOpen] = useState(false);
+// Toggle Btn
+// eslint-disable-next-line no-unused-vars
+const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const menuToggle = document.getElementById("menu-toggle");
