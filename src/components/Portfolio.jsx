@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react";
 
-import $ from "jquery";
-import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -17,6 +14,32 @@ const Portfolio = () => {
         <div className="portfolios-group-main">
           {/* Column 1 */}
           <div>
+            <a
+              href="https://bright-smile-dental-studio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/Dental-web.mp4"
+                    alt="Dental-clinic"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">Dental-clinic</p>
+                  </div>
+                </div>
+                <p className="Corporate">Dental-clinic</p>
+                <p className="Corporate-sub">React.js+Vite & Tailwind CSS</p>
+              </div>
+            </a>
+
+            {/* Second row */}
+
             <a
               href="https://adminkit-demo.vercel.app"
               target="_blank"
@@ -41,104 +64,59 @@ const Portfolio = () => {
               </div>
             </a>
 
-            {/* Second row */}
-
-            <a
-              href="https://gta-vi-web-lime.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <video
-                    src="./images/GTA-VI-web.mp4"
-                    alt="GTA-VI UI"
-                    className="portfolio-video"
-                    autoPlay
-                    loop
-                    muted
-                  />
-                  <div className="overlay">
-                    <p className="overlay-text">GTA-VI UI</p>
-                  </div>
-                </div>
-                <p className="Corporate">GTA-VI UI</p>
-                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
-              </div>
-            </a>
-
             {/* Third row */}
 
             <a
-              href="https://ochi-replica.vercel.app/"
+              href="https://amazon-react-clone-six.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="zoom_in">
                 <div className="image-container">
                   <video
-                    src="./images/Ochi-web.mp4"
-                    alt="Ochi.design"
+                    src="./images/Amazon-web.mp4"
+                    alt="Amazon clone"
                     className="portfolio-video"
                     autoPlay
                     loop
                     muted
                   />
                   <div className="overlay">
-                    <p className="overlay-text">Ochi.design</p>
+                    <p className="overlay-text">Amazon clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Ochi.design</p>
-                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
+                <p className="Corporate">Amazon clone</p>
+                <p className="Corporate-sub">React & Tailwind CSS</p>
               </div>
             </a>
 
             <a
-              href="https://ecommerce-frontend-bice-rho.vercel.app/"
+              href="https://behance-phi.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="second-row-portfolio popup-btn zoom_in">
+              <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/New-ecommerce.png" alt="Ecommerce App" />
+                  <video
+                    src="./images/Behance-web.mp4"
+                    alt="Behance.net Clone"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
                   <div className="overlay">
-                    <p className="overlay-text">Ecommerce App</p>
+                    <p className="overlay-text">Behance.net Clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Full-stack Ecommerce App</p>
-                <p className="Corporate-sub">React + Tailwind CSS</p>
+                <p className="Corporate">Behance.net Clone</p>
+                <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
           </div>
 
           {/* Column 2 */}
           <div>
-            <a
-              href="https://apple-replica-sigma.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <video
-                    src="./images/Apple-web.mp4"
-                    alt="Apple.com Clone"
-                    className="portfolio-video"
-                    autoPlay
-                    loop
-                    muted
-                  />
-                  <div className="overlay">
-                    <p className="overlay-text">Apple.com Clone</p>
-                  </div>
-                </div>
-                <p className="Corporate">Apple.com Clone</p>
-                <p className="Corporate-sub">Tailwind CSS + React.js</p>
-              </div>
-            </a>
-
-            {/* Row-2 */}
-
             <a
               href="https://zentry-app-sigma.vercel.app/"
               target="_blank"
@@ -162,6 +140,8 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
               </div>
             </a>
+
+            {/* Row-2 */}
 
             <a
               href="https://spylt-app.vercel.app/"
@@ -188,72 +168,79 @@ const Portfolio = () => {
             </a>
 
             <a
-              href="https://bottle-animation-one.vercel.app/"
+              href="https://apple-replica-sigma.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="zoom_in">
                 <div className="image-container">
-                  <img src="./images/Bottle.png" alt="Animated Bottle UI" />
+                  <video
+                    src="./images/Apple-web.mp4"
+                    alt="Apple.com Clone"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
                   <div className="overlay">
-                    <p className="overlay-text">Animated Bottle UI</p>
+                    <p className="overlay-text">Apple.com Clone</p>
                   </div>
                 </div>
-                <p className="Corporate">Animated Bottle UI</p>
-                <p className="Corporate-sub">React, Tailwind CSS & GSAP</p>
+                <p className="Corporate">Apple.com Clone</p>
+                <p className="Corporate-sub">Tailwind CSS + React.js</p>
               </div>
             </a>
           </div>
 
           {/* Column 3 */}
           <div className="gallery-bank-section">
-            <a
-              href="https://amazon-react-clone-six.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <video
-                    src="./images/Amazon-web.mp4"
-                    alt="Amazon clone"
-                    className="portfolio-video"
-                    autoPlay
-                    loop
-                    muted
-                  />
-                  <div className="overlay">
-                    <p className="overlay-text">Amazon clone</p>
-                  </div>
-                </div>
-                <p className="Corporate">Amazon clone</p>
-                <p className="Corporate-sub">React & Tailwind CSS</p>
-              </div>
-            </a>
-
             {/* Second row */}
 
             <a
-              href="https://behance-phi.vercel.app/"
+              href="https://ochi-replica.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="zoom_in">
                 <div className="image-container">
                   <video
-                    src="./images/Behance-web.mp4"
-                    alt="Behance.net Clone"
+                    src="./images/Ochi-web.mp4"
+                    alt="Ochi.design"
                     className="portfolio-video"
                     autoPlay
                     loop
                     muted
                   />
                   <div className="overlay">
-                    <p className="overlay-text">Behance.net Clone</p>
+                    <p className="overlay-text">Ochi.design</p>
                   </div>
                 </div>
-                <p className="Corporate">Behance.net Clone</p>
-                <p className="Corporate-sub">React.js & Tailwind css</p>
+                <p className="Corporate">Ochi.design</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
+              </div>
+            </a>
+
+            <a
+              href="https://gta-vi-web-lime.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/GTA-VI-web.mp4"
+                    alt="GTA-VI UI"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">GTA-VI UI</p>
+                  </div>
+                </div>
+                <p className="Corporate">GTA-VI UI</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
               </div>
             </a>
 
@@ -281,18 +268,6 @@ const Portfolio = () => {
               </div>
             </a>
           </div>
-        </div>
-
-        {/* View All Projects Button */}
-        <div className="wrapper view-all-btn zoom_in">
-          <a
-            className="btn-hover"
-            href="https://vercel.com/zartasha-kanwals-projects"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View All
-          </a>
         </div>
       </section>
 
