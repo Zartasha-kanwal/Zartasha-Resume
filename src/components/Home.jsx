@@ -74,7 +74,7 @@ useEffect(() => {
 
   
   // Toggle Btn
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [_, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const menuToggle = document.getElementById("menu-toggle");
