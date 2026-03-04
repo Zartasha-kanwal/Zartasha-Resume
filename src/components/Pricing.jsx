@@ -1,4 +1,3 @@
-import React from "react";
 import BasicPlanSvg from "../assets/images/svg/basic-plain.svg";
 import StandardPlanSvg from "../assets/images/svg/strandard-plan.svg";
 import GoldPlanSvg from "../assets/images/svg/gold-plan.svg";

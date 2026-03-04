@@ -1,4 +1,3 @@
-import React from "react";
 import UiUxSvg from "../assets/images/svg/ui-ux.svg";
 import DownArrow from "../assets/images/svg/down-arrow.svg";
 import VisualBranding from "../assets/images/svg/visual-branding.svg";
