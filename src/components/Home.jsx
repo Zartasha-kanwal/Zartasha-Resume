@@ -44,30 +44,33 @@ const Home = () => {
   const [firstTextIndex, setFirstTextIndex] = useState(0);
   const [secondTextIndex, setSecondTextIndex] = useState(0);
 
-  useEffect(() => {
-    const firstTextTimeout = setTimeout(() => {
-      setFirstTextIndex((prevIndex) => (prevIndex + 1) % firstTexts.length);
-    }, intervalTime * 3);
+ // First rotating text
+useEffect(() => {
+  const firstTextTimeout = setTimeout(() => {
+    setFirstTextIndex((prevIndex) => (prevIndex + 1) % firstTexts.length);
+  }, intervalTime * 3);
 
-    return () => clearTimeout(firstTextTimeout);
-  }, [firstTextIndex]);
+  return () => clearTimeout(firstTextTimeout);
+}, [firstTextIndex, firstTexts.length]);
 
-  useEffect(() => {
-    const secondTextTimeout = setTimeout(() => {
-      setSecondTextIndex((prevIndex) => (prevIndex + 1) % secondTexts.length);
-    }, intervalTime * 3);
+// Second rotating text
+useEffect(() => {
+  const secondTextTimeout = setTimeout(() => {
+    setSecondTextIndex((prevIndex) => (prevIndex + 1) % secondTexts.length);
+  }, intervalTime * 3);
 
-    return () => clearTimeout(secondTextTimeout);
-  }, [secondTextIndex]);
+  return () => clearTimeout(secondTextTimeout);
+}, [secondTextIndex, secondTexts.length]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFirstTextIndex((prevIndex) => (prevIndex + 1) % firstTexts.length);
-      setSecondTextIndex((prevIndex) => (prevIndex + 1) % secondTexts.length);
-    }, intervalTime * 7);
+// Combined interval rotation
+useEffect(() => {
+  const interval = setInterval(() => {
+    setFirstTextIndex((prevIndex) => (prevIndex + 1) % firstTexts.length);
+    setSecondTextIndex((prevIndex) => (prevIndex + 1) % secondTexts.length);
+  }, intervalTime * 7);
 
-    return () => clearInterval(interval);
-  }, []);
+  return () => clearInterval(interval);
+}, [firstTexts.length, secondTexts.length]);
 
   
   // Toggle Btn
@@ -79,7 +82,7 @@ const Home = () => {
     const menuItems = document.querySelectorAll(".menu-list-main li");
 
     const handleMenuToggle = () => {
-      setMenuOpen(!menuOpen);
+      setMenuOpen((prev) => !prev);
       menuToggle.classList.toggle("open");
       sideMenu.classList.toggle("show");
     };
@@ -116,7 +119,7 @@ const Home = () => {
         });
       };
     }
-  }, [menuOpen]);
+  }, []);
 
   const [activeLink, setActiveLink] = useState("");
 
