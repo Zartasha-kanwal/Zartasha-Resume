@@ -1,5 +1,3 @@
-
-
 const Portfolio = () => {
   return (
     <>
@@ -190,59 +188,6 @@ const Portfolio = () => {
                 <p className="Corporate-sub">Tailwind CSS + React.js</p>
               </div>
             </a>
-          </div>
-
-          {/* Column 3 */}
-          <div className="gallery-bank-section">
-            {/* Second row */}
-
-            <a
-              href="https://ochi-replica.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <video
-                    src="./images/Ochi-web.mp4"
-                    alt="Ochi.design"
-                    className="portfolio-video"
-                    autoPlay
-                    loop
-                    muted
-                  />
-                  <div className="overlay">
-                    <p className="overlay-text">Ochi.design</p>
-                  </div>
-                </div>
-                <p className="Corporate">Ochi.design</p>
-                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
-              </div>
-            </a>
-
-            <a
-              href="https://gta-vi-web-lime.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="zoom_in">
-                <div className="image-container">
-                  <video
-                    src="./images/GTA-VI-web.mp4"
-                    alt="GTA-VI UI"
-                    className="portfolio-video"
-                    autoPlay
-                    loop
-                    muted
-                  />
-                  <div className="overlay">
-                    <p className="overlay-text">GTA-VI UI</p>
-                  </div>
-                </div>
-                <p className="Corporate">GTA-VI UI</p>
-                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
-              </div>
-            </a>
 
             <a
               href="https://paheli-cyber-security.vercel.app/"
@@ -267,6 +212,86 @@ const Portfolio = () => {
                 <p className="Corporate-sub">React.js & Tailwind css</p>
               </div>
             </a>
+          </div>
+
+          {/* Column 3 */}
+          <div className="gallery-bank-section">
+            
+
+            <a
+              href="https://crown-tower-realestate-project.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/Real-estate.mp4"
+                    alt="Real-estate Showcase"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">Real-estate Showcase</p>
+                  </div>
+                </div>
+                <p className="Corporate">Real-estate Showcase</p>
+                <p className="Corporate-sub">React.js + vite ,Framer-motion & Tailwind CSS</p>
+              </div>
+            </a>
+
+
+
+            <a
+              href="https://ochi-replica.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/Ochi-web.mp4"
+                    alt="Ochi.design"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">Ochi.design</p>
+                  </div>
+                </div>
+                <p className="Corporate">Ochi.design</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
+              </div>
+            </a>
+            <a
+              href="https://gta-vi-web-lime.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="zoom_in">
+                <div className="image-container">
+                  <video
+                    src="./images/GTA-VI-web.mp4"
+                    alt="GTA-VI UI"
+                    className="portfolio-video"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                  <div className="overlay">
+                    <p className="overlay-text">GTA-VI UI</p>
+                  </div>
+                </div>
+                <p className="Corporate">GTA-VI UI</p>
+                <p className="Corporate-sub">React.js,Gsap & Tailwind CSS</p>
+              </div>
+            </a>
+
+            
           </div>
         </div>
       </section>
